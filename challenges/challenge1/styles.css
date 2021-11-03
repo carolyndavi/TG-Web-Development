@@ -1,0 +1,40 @@
+div {
+  background: linear-gradient(45deg, #000000, rgb(52, 122, 52), #52ffa0);
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tgg {
+  color: white;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-family: "Zen Antique Soft", serif;
+}
+
+.days {
+  color: white;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-family: "Zen Antique Soft", serif;
+}
+
+p {
+  color: white;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 56%;
+  transform: translate(-50%, -50%);
+}
