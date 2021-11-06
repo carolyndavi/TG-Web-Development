@@ -2,10 +2,25 @@ a {
   text-decoration-line: none;
   color: black;
 }
-a:hover {
-  color: blue;
+
+h1 {
+  display: inline-block;
 }
 
-ul {
+#main-button {
+  position: relative;
+  left: 40px;
+  bottom: 4px;
+}
+
+.main-div {
+  padding: 10px;
+}
+
+.main-ul {
   list-style-type: none;
+}
+
+a:hover {
+  color: blue;
 }

@@ -4,56 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Opdracht 6</title>
+    <title>Selectors & Visual Rules - Opdracht 6</title>
+    <link rel="stylesheet" href="../../styles.css" />
   </head>
   <body>
-    <h1>Opdracht 6</h1>
-    <br />
+    <div class="main-div">
+      <h1>Selectors & Visual Rules</h1>
+      <button id="main-button"><a href="../../index.html">Main Menu</a></button>
+    </div>
 
-    <h2>Child Selectors:</h2>
-    <p>
-      Een child selector in CSS is het "groter dan" symbool, het ziet er als
-      volgt uit: <strong><code>ol &gt; li</code></strong
-      >.
-      <br />
-      Dit betekend "selecteer elementen die alleen directe afstammelingen zijn".
-      In this geval, "selecteer lijstitems die direct afstammen van een
-      geordende lijst".
-      <br />
-      Bijvoorbeeld: <strong><code>ol &gt; li { color : red; }</code></strong>
-      <br />
-      Het voordeel van een child selector is dat het modelijk is elementen te
-      selecteren die een parent > child relatie hebben.
-    </p>
+    <hr />
 
-    <h2>Adjacent Selectors:</h2>
-    <p>
-      Een adjecent selector in CSS is op zichzelf geen selector, maar een manier
-      om twee selectors te combineren. Een adjecent selector wordt gebruikt om
-      een element te selecteren dat direct na een ander specifiek element staat.
-      Sibling elementen moeten hetzelfde parent element hebben en "adjacent"
-      betekend "direct volgend".
-      <br />
-      Bijvoorbeeld: <strong><code>div + p { color : blue; }</code></strong>
-      <br />
-      Het voordeel van een adjectent selector is dat je een element kunt
-      selecteren die precies naast elkaar liggen.
-    </p>
-    <h2>General Selectors:</h2>
-    <p>
-      De general selector wordt gebruikt met deze symbool: <code>~</code>. Deze
-      selector scheidt twee selectors en komt overeen met alle iteraties van het
-      tweede element, die het eerste element volgen (hoewel het niet onmiddelijk
-      is), die de children van dezelfde parent zijn.
-      <br />
-      Bijvoorbeeld:
-      <strong><code>img ~ p { color : green; }</code></strong>
-      <br />
-      Het voordeel van een general selector is dat je elementen kunt matchen die
-      elkaar volgen.
-    </p>
+    <div class="main-div">
+      <h2>Opdracht 6</h2>
+      <p>Verder heb je ook nog de volgende selectors:</p>
+      <ul>
+        <li>child selectors</li>
+        <li>adjacent selectors</li>
+        <li>general selectors</li>
+      </ul>
+    </div>
 
-    <br />
-    <a href="../../index.html"><input type="button" value="Terug" /></a>
+    <hr />
+
+    <div class="main-div">
+      <h3>Child Selectors:</h3>
+      <p>
+        Een child selector in CSS is het "groter dan" symbool, het ziet er als
+        volgt uit: <strong><code>ol &gt; li</code></strong
+        >.
+        <br />
+        Dit betekend "selecteer elementen die alleen directe afstammelingen
+        zijn". In this geval, "selecteer lijstitems die direct afstammen van een
+        geordende lijst".
+        <br />
+        Bijvoorbeeld: <strong><code>ol &gt; li { color : red; }</code></strong>
+        <br />
+        Het voordeel van een child selector is dat het modelijk is elementen te
+        selecteren die een parent > child relatie hebben.
+      </p>
+    </div>
+
+    <div class="main-div">
+      <h3>Adjacent Selectors:</h3>
+      <p>
+        Een adjecent selector in CSS is op zichzelf geen selector, maar een
+        manier om twee selectors te combineren. Een adjecent selector wordt
+        gebruikt om een element te selecteren dat direct na een ander specifiek
+        element staat. Sibling elementen moeten hetzelfde parent element hebben
+        en "adjacent" betekend "direct volgend".
+        <br />
+        Bijvoorbeeld: <strong><code>div + p { color : blue; }</code></strong>
+        <br />
+        Het voordeel van een adjectent selector is dat je een element kunt
+        selecteren die precies naast elkaar liggen.
+      </p>
+    </div>
+
+    <div class="main-div">
+      <h3>General Selectors:</h3>
+      <p>
+        De general selector wordt gebruikt met deze symbool: <code>~</code>.
+        Deze selector scheidt twee selectors en komt overeen met alle iteraties
+        van het tweede element, die het eerste element volgen (hoewel het niet
+        onmiddelijk is), die de children van dezelfde parent zijn.
+        <br />
+        Bijvoorbeeld:
+        <strong><code>img ~ p { color : green; }</code></strong>
+        <br />
+        Het voordeel van een general selector is dat je elementen kunt matchen
+        die elkaar volgen.
+      </p>
+    </div>
   </body>
 </html>

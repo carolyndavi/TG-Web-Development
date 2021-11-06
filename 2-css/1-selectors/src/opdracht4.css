@@ -1,11 +1,11 @@
-h2 {
+.assignment-text {
   color: green;
 }
 
-p {
+.assignment-p {
   color: darkblue;
 }
 
-div {
+.assignment-div {
   color: green;
 }

@@ -4,24 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Opdracht 8</title>
+    <title>Selectors & Visual Rules - Opdracht 8</title>
+    <link rel="stylesheet" href="../../1-selectors/src/opdracht8.css" />
+    <link rel="stylesheet" href="../../styles.css" />
   </head>
   <body>
-    <h1>Opdracht 8</h1>
-    <br />
+    <div class="main-div">
+      <h1>Selectors & Visual Rules</h1>
+      <button id="main-button"><a href="../../index.html">Main Menu</a></button>
+    </div>
 
-    <h2>Wat is Cascade?</h2>
-    <p>
-      Cascade betekent dat de volgorde van de CSS-regels ertoe doen; CSS wordt
-      gelezen en uigevoerd van boven naar beneden. Dit betekent dat wanner je
-      twee regels hebt en dezelfde stijling geeft aan een element, de laatst
-      geschreven regel zal worden uitgevoerd.
-      <br />
-      Bijvoorbeeld:
-      <strong><code>h1 { color: red; } , h1 { color: blue; } </code></strong> de
-      h1 zal dan een blauwe kleur hebben.
-    </p>
+    <hr>
+    
+    <div class="main-div">
+      <h2>Opdracht 8</h2>
+      <p>
+        Styling die je toepast wordt toegepast in een bepaalde volgorde. Het kan voorkomen dat je styling toepast en vervolgens niet het gewenste resultaat ziet. Cascade en Inheritance zijn belangrijke concepten om te begrijpen hoe styling werkt. 
+        <br>
+        Lees hier in de officiële documentatie meer over cascade en inheritance. Zoek ook andere referenties om het concept te begrijpen.
+      </p>
+    </div>
 
-    <a href="../../index.html"><input type="button" value="Terug" /></a>
+    <hr />
+
+    <div class="main-div">
+      <h3>Wat is Cascade?</h3>
+      <p>
+        Cascade betekent dat de volgorde van de CSS-regels ertoe doen; CSS wordt
+        gelezen en uigevoerd van boven naar beneden. Dit betekent dat wanner je
+        twee regels hebt en dezelfde stijling geeft aan een element, de laatst
+        geschreven regel zal worden uitgevoerd.
+        <br />
+        Bijvoorbeeld:
+        <strong><code>h1 { color: red; } , h1 { color: blue; } </code></strong> de
+        h1 zal dan een blauwe kleur hebben.
+      </p>
+    </div>
+
+    <div class="main-div">
+      <h3>Wat is Inheritance?</h3>
+      <p>
+        In CSS inheritance is wanneer een style door sommige child elements wordt
+        overgenomen van de parent element.
+        <br />
+        Bijvoorbeeld, als je een element een kleur en een font-family property
+        geeft zal alle inhoud van het element worden gestyled. Tenzij je die
+        specifieke content een andere kleur en een andere font-family hebt
+        gegeven.
+        <br />
+        Bijvoorbeeld:
+        <br />
+        <div class="assignment-div">
+          <p>
+            Deze tekst zal de font-family overnemen van de parent div.          
+          </p>
+        </div>
+
+        Sommige properties werken niet met inheritance. Bijvoorbeeld als je een
+        width geeft aan een element, de child of die element zal de width niet
+        overnemen.
+      </p>
+    </div>   
   </body>
 </html>
