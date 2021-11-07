@@ -1,0 +1,15 @@
+.outside {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  position: absolute;
+}
+
+.inside {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}

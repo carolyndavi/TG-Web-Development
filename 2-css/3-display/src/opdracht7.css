@@ -1,0 +1,25 @@
+.img {
+  background-image: url(https://cdn.pixabay.com/photo/2021/07/04/19/58/sunset-6387462__340.jpg);
+  width: 510px;
+  height: 340px;
+}
+
+.assignment-h2 {
+  position: relative;
+  top: 14%;
+  left: 40%;
+  width: 52%;
+}
+
+span {
+  color: white;
+}
+
+p {
+  color: rgb(252, 255, 61);
+  position: relative;
+  top: 10%;
+  left: 48%;
+  font-size: 14px;
+  width: 37%;
+}

@@ -1,0 +1,9 @@
+img {
+  width: 300px;
+  position: absolute;
+}
+
+.text {
+  position: relative;
+  left: 1%;
+}

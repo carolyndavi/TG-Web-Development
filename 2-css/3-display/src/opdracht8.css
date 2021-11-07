@@ -1,0 +1,23 @@
+.img {
+  background-image: url(https://cdn.pixabay.com/photo/2014/07/30/02/00/iceberg-404966__340.jpg);
+  width: 490px;
+  height: 340px;
+  position: relative;
+}
+
+.assignment-h2 {
+  background-color: yellow;
+  position: absolute;
+  padding-left: 30px;
+  top: 18%;
+  width: 520px;
+}
+
+p {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 200px;
+  padding-left: 16px;
+}

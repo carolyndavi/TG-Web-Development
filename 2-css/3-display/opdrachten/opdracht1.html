@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display & Positioning - Opdracht 1</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <h1>Display & Positioning</h1>
+      <button id="main-button"><a href="../../index.html">Main Menu</a></button>
+    </div>
+
+    <hr />
+
+    <div class="main-div">
+      <h2>Opdracht 1</h2>
+      <p>
+        Welke position values zijn er? Leg voor elke position values uit wat het
+        doet. Geef ook aan welke default position waarde elementen hebben die je
+        gebruikt in html.
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="main-div">
+      <h3>Default position:</h3>
+      <p>potition: static;</p>
+    </div>
+    <div class="main-div">
+      <h3>Position Static:</h3>
+      <p>
+        Static position is de standaardinstelling. Wanneer een element static is
+        hebben de
+        <strong><code>top right bottom left en z-index</code></strong> waarden
+        geen effect. Een static element wordt gepositioneerd volgens de normale
+        stoom van het document.
+      </p>
+    </div>
+    <div class="main-div">
+      <h3>Position Relative:</h3>
+      <p>
+        Wanneer je een element position op relative zet, zonder de volgende
+        waarden te gebruiken:
+        <strong><code>top right bottom left</code></strong> gebeurt er niets.
+        Wanneer je een extra position toevoegt, zoals
+        <strong><code>left : 20px;</code></strong> zal het element 20px naar
+        rechts verplaatsen vanaf zijn normale positie. Een relative element
+        wordt gepositioneerd volgens de normale stroom van het document.
+      </p>
+    </div>
+    <div class="main-div">
+      <h3>Position Absolute:</h3>
+      <p>
+        Wanneer een element een position heeft van absolute dan wordt het
+        element uit de documentstroom gehaald. Dit betekent dat het geen ruimte
+        meer in beslag neemt zoals static en relative. Wanneer de position
+        absolute is van een element dan wordt het element gepositioneerd met
+        verwijzing naar de closest parent element die zijn position of relative
+        heeft staan. di
+      </p>
+    </div>
+    <div class="main-div">
+      <h3>Position Fixed:</h3>
+      <p>
+        Wanneer een element een position heeft van fixed, wordt het element
+        relative gepositioneerd ten opzichte van de viewport. Wat dit betekent
+        is dat het altijd op dezelfde plaats blijft staan, zelfs als de pagina
+        wordt gescrold. De waarden van
+        <strong><code>top right bottom left</code></strong> worden gebruikt om
+        het element te positioneren.
+        <br />
+        Een fixed element laat geen gat in de pagina achter waar het element
+        normaal gesproken zou hebben gestaan.
+      </p>
+    </div>
+    <div class="main-div">
+      <h3>Position Sticky:</h3>
+      <p>
+        Sticky position is een hybride van relative en fixed positioning. Het
+        element met een sticky position wordt behandeld alsof het een relative
+        position heeft totdat het een gespecificeerde drempel overschrijdt,
+        waarna het wordt behandeld als een fixed position.
+      </p>
+    </div>
+  </body>
+</html>
