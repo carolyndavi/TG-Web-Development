@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elementen - Opdracht 3</title>
+    <link rel="stylesheet" href="../../4-pseudo-elements/src/opdracht3.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <h1>Pseudo Elementen</h1>
+      <button id="main-button"><a href="../../index.html">Main Menu</a></button>
+    </div>
+
+    <hr />
+
+    <div class="main-div">
+      <h2>Opdracht 3</h2>
+      <p>
+        Er zijn aldus 14 verschillende pseudo elementen. Je hebt ze in de
+        voorgaande opdracht reeds opgezocht en uitgezocht wat ze doen. Kun je
+        van al deze pseudo-elementen een voorbeeld maken?
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="main-div">
+      <h3>::after</h3>
+      <p>
+        <strong><code>::after</code></strong> is een pseudo-element dat er voor
+        zorgt dat je een extra laag kan plaatsen na de geselicteerde
+        element-content.
+      </p>
+      <p class="pseudo-after">Here is some generic content</p>
+
+      <br />
+
+      <h3>::before</h3>
+      <p>
+        <strong><code>::before</code></strong> is een pseudo-element dat er voor
+        zorgt dat je een extra laag kan plaatsen voor de geselicteerde
+        element-content.
+      </p>
+      <p class="pseudo-before">Here is some generic content</p>
+
+      <br />
+
+      <h3>::backdrop</h3>
+      <p>
+        <strong><code>::backdrop</code></strong> is een experimentele
+        pseudo-element dat creëert een backdrop dat de gehele viewport inneemt
+        en wordt direct onder een
+        <code><strong>&lt;dialog&gt;</strong></code> weergegeven.
+      </p>
+
+      <br />
+
+      <h3>::cue</h3>
+      <p>
+        <strong><code>::cue</code></strong> is een pseudo-element die je kunt
+        gebruiken om media captions stijlen.
+      </p>
+
+      <br />
+
+      <h3>::first-letter</h3>
+      <p class="pseudo-first-letter">
+        <strong><code>::first-letter</code></strong> is een pseudo-element die
+        je kunt gebruiken je de eerste letter van een block element te stijlen.        
+      </p>
+
+      <br />
+
+      <h3>::first-line</h3>
+      <p class="pseudo-first-line">
+        <strong><code>::first-line</code></strong> is een pseudo-element die je
+        kunt gebruiken om de eerste regel van een block element te stijlen.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eos veniam facilis doloribus nisi ex unde dignissimos officiis iste deleniti molestias praesentium earum doloremque dolorum tempore, amet minima sequi! Voluptatem.
+        <br>
+        Quas dolores nesciunt nostrum. Vel officiis ex ad repudiandae, nesciunt autem praesentium, blanditiis soluta eaque ipsum cumque? Consequatur beatae iste cupiditate officiis odit aperiam autem sit tempora, illum, velit esse?
+      </p>
+
+      <br />
+
+      <h3>::file-selector</h3>
+      <p>
+        <strong><code>::file-selector-button</code></strong> is een
+        pseudo-element die je kunt gebruiken om een button te stijlen waar je op
+        kunt clicken om bestanden te uploaden.
+
+        <form>
+          <label for="fileUpload">Upload file</label>
+          <input type="file" id="fileUpload" />
+        </form>
+      </p>      
+
+      <br />
+
+      <h3>::grammer-error</h3>
+      <p class="pseudo-grammer-error">
+        <strong><code>::grammar-error</code></strong> is een experimentele
+        pseudo-element die je kunt gebruiken om een element voor een ander
+        element te plaatsen.
+      </p>
+
+      <br />
+
+      <h3>::marker</h3>
+      <p class="pseudo-marker">
+        <strong><code>::marker</code></strong> is een pseudo-element dat de
+        stijling van lijst markers veranderd.
+      </p>
+      <ul>
+        <li>de ::marker pseudo element</li>
+        <li>de ::marker pseudo element</li>
+        <li>de ::marker pseudo element</li>
+        <li>de ::marker pseudo element</li>
+      </ul>
+
+      <br />
+
+      <h3>::placeholder</h3>
+      <p class="pseudo-placeholder">
+        <strong><code>::placeholder</code></strong> is een pseudo-element die je
+        kunt gebruikten om text in inputs of textareas te plaatsen.
+
+        <input class="placeholder" placeholder="Enter your email address" />
+      </p>
+
+      <br />
+
+      <h3>::selection</h3>
+      <p class="pseudo-selection">
+        <strong><code>::selection</code></strong> is een pseudo-element dat er
+        voor zorgt dat wanneer je tekst selecteerd, je de stijling kan
+        veranderen. Bijvoorbeeld de cursor of de achtergrond kleur. Je kan zelfs
+        een tekst schaduw implementeren.
+      </p>
+
+      <br>
+
+      <h3>::spelling-error</h3>
+      <p class="pseudo-spelling-error" contenteditable spellcheck="true"><strong><code>::spelling-error</code></strong> is een experimentele pseudo-element die
+        je kunt gebruiken wanneer je een fout hebt geschreven in je text kan je
+        het markeren.</p>
+
+      <br>
+
+      <h3>::target-text</h3>
+      <p class="pseudo-target-text"><strong><code>::target-text</code></strong> is een experimentele pseudo
+          element die je kunt gebruikten om tekst waarnaar is gescrolled als de
+          browser scroll-to-text onderstuint. Hiermee kunnen auteurs kiezen hoe ze
+          dat gedeelte van de tekst willen markeren.</p>
+    </div>
+  </body>
+</html>

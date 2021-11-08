@@ -1,0 +1,62 @@
+.pseudo-after {
+  font-size: 20px;
+  width: 300px;
+  border: 2px solid black;
+}
+
+.pseudo-after::after {
+  content: "after";
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border: 2px solid black;
+  background: rgb(65, 93, 255);
+}
+
+.pseudo-before {
+  font-size: 20px;
+  width: 300px;
+  border: 2px solid black;
+}
+
+.pseudo-before::before {
+  content: "before";
+  position: absolute;
+  border: 2px solid black;
+  width: 50px;
+  height: 20px;
+  background: rgb(65, 93, 255);
+}
+
+.pseudo-first-letter::first-letter {
+  color: rgb(65, 93, 255);
+  font-size: 30px;
+}
+
+.pseudo-first-line::first-line {
+  color: rgb(65, 93, 255);
+}
+
+input[type="file"]::file-selector-button {
+  padding: 5px;
+  background-color: rgb(65, 93, 255);
+  border: solid 2px black;
+  transition: 1s;
+}
+
+li::marker {
+  color: rgb(65, 93, 255);
+}
+
+.placeholder::placeholder {
+  color: rgb(65, 93, 255);
+}
+
+.pseudo-selection::selection {
+  color: rgb(128, 147, 255);
+  background-color: rgb(14, 31, 133);
+}
+
+.pseudo-spelling-error::spelling-error {
+  text-decoration: wavy red;
+}

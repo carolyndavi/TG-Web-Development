@@ -1,0 +1,23 @@
+.star {
+  background-color: red;
+  position: relative;
+  margin: 100px;
+  height: 300px;
+  width: 300px;
+}
+.star::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  transform: rotate(20deg);
+  height: 300px;
+  width: 300px;
+}
+.star::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  transform: rotate(240deg);
+  height: 300px;
+  width: 300px;
+}

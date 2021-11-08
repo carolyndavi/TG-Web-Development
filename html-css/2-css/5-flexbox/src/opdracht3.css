@@ -1,0 +1,16 @@
+#flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: #faffae;
+}
+
+div {
+  padding: 20px 40px;
+  border: 10px solid #faffae;
+  text-align: center;
+  background-color: #bbfdae;
+}
+
+.flex-item {
+  flex-grow: 4;
+}

@@ -1,0 +1,18 @@
+.assignment-div {
+  position: relative;
+}
+
+.assignment-text {
+  color: white;
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+  width: 500px;
+}
+
+.assignment-div::after {
+  content: url(https://cdn.pixabay.com/photo/2021/11/01/18/01/flower-6761262__340.jpg);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}

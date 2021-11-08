@@ -1,0 +1,40 @@
+.assignment-div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.figure {
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  height: 150px;
+  width: 150px;
+}
+
+.figure::before {
+  content: "";
+  position: relative;
+  background-color: black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 50px;
+  right: 1px;
+  transform: translate(-60%, -60%);
+}
+
+.figure::after {
+  content: "";
+  position: relative;
+  background-color: black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 50px;
+  left: 1px;
+  transform: translate(60%, -60%);
+}

@@ -1,0 +1,30 @@
+#flex-start {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #faffae;
+}
+
+#flex-end {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #faffae;
+}
+
+#center {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faffae;
+}
+
+.flex-item {
+  padding: 20px 40px;
+  border: 10px solid #faffae;
+  text-align: center;
+  background-color: #bbfdae;
+}

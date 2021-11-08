@@ -1,0 +1,43 @@
+#flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+div {
+  padding: 40px 40px 40px 40px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #bbfdae;
+}
+
+.flex-item {
+  flex-grow: 4;
+}
+
+.flex-item1 {
+  background-color: #ffffe1;
+}
+
+.flex-item2 {
+  background-color: #89cff8;
+}
+
+.flex-item3 {
+  background-color: #c2f8c9;
+}
+
+.flex-item4 {
+  background-color: #ffffff;
+}
+
+.flex-item5 {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.flex-item6 {
+  background: linear-gradient(90deg, #5a5dfc, rgb(139, 153, 255), #b4e0fe);
+}

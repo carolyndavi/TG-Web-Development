@@ -1,0 +1,33 @@
+#flex-container {
+  height: 400px;
+  background-color: #fffacd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div {
+  padding: 15px;
+  border: 3px solid #fffacd;
+  background-color: #a9affd;
+}
+
+.flex-item2 {
+  width: 40%;
+}
+
+.flex-item3 {
+  width: 50%;
+}
+
+.flex-item4 {
+  width: 60%;
+}
+
+.flex-item5 {
+  width: 20%;
+}
+
+.flex-item6 {
+  width: 30%;
+}
