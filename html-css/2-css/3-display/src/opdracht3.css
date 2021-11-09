@@ -1,0 +1,15 @@
+.display {
+  color: rgb(255, 0, 0);
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
