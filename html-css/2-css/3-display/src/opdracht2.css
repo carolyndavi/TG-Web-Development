@@ -4,12 +4,3 @@
   top: 50px;
   right: 50px;
 }
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: blue;
-}

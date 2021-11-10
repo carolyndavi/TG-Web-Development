@@ -8,12 +8,3 @@ html {
   top: 50px;
   left: 100px;
 }
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: blue;
-}
