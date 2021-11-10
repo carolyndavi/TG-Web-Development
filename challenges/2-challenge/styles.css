@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #323a42;
+}
+
+.loading div {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  background-color: #ff7a7a;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.loading .two {
+  background-color: #ff9f9f;
+  animation-delay: 0.4s;
+}
+
+.loading .three {
+  background-color: #ffcfcf;
+  animation-delay: 0.8s;
+}
+
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateY(10px);
+  }
+}
