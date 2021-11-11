@@ -1,0 +1,47 @@
+.assignment-div {
+  border: 6px solid black;
+  width: 400px;
+  height: 400px;
+  padding: 0;
+  position: relative;
+}
+
+.img-div {
+  background-image: url("https://cdn.pixabay.com/photo/2021/09/25/12/52/boho-art-6654957_960_720.jpg");
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.img-div::before {
+  content: "goodmorning";
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+}
+
+.img-div::after {
+  content: "hover me";
+  background-color: #a9bcb8;
+  position: absolute;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2000ms;
+  width: 400px;
+  height: 400px;
+}
+
+.img-div:hover::after {
+  transform: rotate(50deg);
+  margin: 300px;
+  background-color: #df8d46;
+  color: white;
+}

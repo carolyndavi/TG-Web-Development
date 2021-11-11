@@ -1,0 +1,8 @@
+.transition {
+  transition: color 1000ms;
+  color: black;
+}
+
+.transition:hover {
+  color: rgb(46, 46, 255);
+}
