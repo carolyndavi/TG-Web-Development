@@ -1,0 +1,37 @@
+.button {
+  background-color: #3e4149;
+  border: 2px solid #444f5a;
+  color: #ffc8c8;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 700ms;
+  transition-property: color, background-color, box-shadow;
+  height: 50px;
+  width: 100px;
+}
+.button:hover {
+  background-color: #ff9999;
+  box-shadow: 5px 5px 10px #3e4149;
+  color: #444f5a;
+  cursor: pointer;
+}
+
+.color-changing-square {
+  background-color: #ff9999;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: 2px solid #444f5a;
+  left: 60%;
+  top: 50%;
+  transition-duration: 2000ms;
+  transition-property: background-color, border;
+  transform: translate(-50%, -50%);
+}
+.color-changing-square:hover {
+  background-color: #3e4149;
+  cursor: pointer;
+  border: 2px solid #ffc8c8;
+}/*# sourceMappingURL=main.css.map */
