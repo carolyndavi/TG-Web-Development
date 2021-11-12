@@ -1,0 +1,46 @@
+section {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border: 6px solid black;
+  width: 266px;
+  height: 400px;
+  padding: 0;
+  position: absolute;
+}
+
+img {
+  position: relative;
+  height: 400px;
+  z-index: -2;
+}
+
+.title {
+  position: absolute;
+  z-index: -1;
+  font-family: "Montserrat", sans-serif;
+  top: 7%;
+  left: 28%;
+  color: white;
+}
+
+.cover {
+  position: absolute;
+  width: 267px;
+  height: 400px;
+  background-color: #a9bcb8;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2000ms;
+  z-index: 0;
+}
+
+.container:hover .cover {
+  transform: rotate(50deg);
+  margin: 200px;
+  background-color: #df8d46;
+}

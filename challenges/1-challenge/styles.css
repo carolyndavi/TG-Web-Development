@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .div {
   background: linear-gradient(45deg, #000000, rgb(52, 122, 52), #52ffa0);
   box-shadow: 0 3px 10px black;
@@ -15,26 +20,26 @@
   font-family: "Zen Antique Soft", serif;
 }
 
-h1 {
+.one {
   position: fixed;
   left: 50%;
-  top: 25%;
+  top: 38%;
   transform: translate(-50%, -50%);
   font-size: 60px;
 }
 
-h2 {
+.two {
   position: fixed;
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
   font-size: 48px;
 }
 
-h3 {
+.three {
   position: fixed;
   left: 50%;
-  top: 56%;
+  top: 60%;
   transform: translate(-50%, -50%);
   font-size: 15px;
 }
