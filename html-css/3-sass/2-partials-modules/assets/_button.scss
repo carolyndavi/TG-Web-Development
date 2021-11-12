@@ -1,0 +1,21 @@
+@import "./colors";
+
+.button {
+  background-color: $background-color;
+  border: 2px solid $text-color-hover;
+  color: $text-color;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 700ms;
+  transition-property: color, background-color, box-shadow;
+  height: 50px;
+  width: 100px;
+  &:hover {
+    background-color: $background-color-hover;
+    box-shadow: 5px 5px 10px $background-color;
+    color: $text-color-hover;
+    cursor: pointer;
+  }
+}
