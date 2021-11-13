@@ -53,6 +53,22 @@ section {
   font-weight: 500;
 }
 
+.card1:hover ~ .hover1 {
+  color: #3b6e8a;
+}
+
+.card2:hover ~ .hover2 {
+  color: #3b6e8a;
+}
+
+.card3:hover ~ .hover3 {
+  color: #3b6e8a;
+}
+
+.card4:hover ~ .hover4 {
+  color: #3b6e8a;
+}
+
 .card1:hover {
   transform: translate(-100px, -20px);
 }

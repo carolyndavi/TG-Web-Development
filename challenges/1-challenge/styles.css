@@ -3,12 +3,16 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .div {
-  background: linear-gradient(45deg, #000000, rgb(52, 122, 52), #52ffa0);
-  box-shadow: 0 3px 10px black;
-  width: 400px;
-  height: 400px;
-  position: fixed;
+  background: linear-gradient(45deg, #a0e9ff, #f093b0, #edca85);
+  box-shadow: 0 0.3rem 1rem black;
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -17,29 +21,30 @@
 .text {
   color: white;
   text-align: center;
-  font-family: "Zen Antique Soft", serif;
+  font-family: "Lora", serif;
+  font-weight: 400;
 }
 
 .one {
   position: fixed;
   left: 50%;
-  top: 38%;
+  top: 43%;
   transform: translate(-50%, -50%);
-  font-size: 60px;
+  font-size: 6rem;
 }
 
 .two {
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 55%;
   transform: translate(-50%, -50%);
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 
 .three {
   position: fixed;
   left: 50%;
-  top: 60%;
+  top: 63%;
   transform: translate(-50%, -50%);
-  font-size: 15px;
+  font-size: 1.5rem;
 }
