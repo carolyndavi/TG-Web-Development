@@ -17,7 +17,6 @@ body {
 
 .navigation {
   background: #b0a9a9;
-  box-sizing: border-box;
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -71,13 +70,13 @@ body {
   color: rgb(97, 135, 216);
   width: 30%;
   position: relative;
-  top: 40%;
+  top: 50%;
   left: 70%;
   transform: translate(-50%, -50%);
 }
 
 .heading {
-  font-size: 10rem;
+  font-size: 7rem;
 }
 
 .info {
@@ -95,6 +94,7 @@ body {
   border: 2px solid rgb(128, 179, 128);
   font-family: "Lobster", cursive;
   font-size: 2rem;
+  transition: all 1s ease;
 }
 
 .btn-show-more {
@@ -108,34 +108,42 @@ body {
 
 .btn:hover {
   cursor: pointer;
+  transform: translateY(-0.5rem);
 }
 
-/* MIDDLE CONTAINER */
+.btn-buy:hover {
+  background-color: rgb(128, 179, 128);
+}
 
-.middle-container {
-  height: 70vh;
-  width: 100%;
+.btn-show-more:hover {
+  background-color: rgb(97, 135, 216);
+}
+
+/* POPULAR DISHES */
+
+.popular-section {
   background: #b0a9a9;
+  padding: 10rem 0;
 }
 
 .heading-secondary {
   text-align: center;
-  top: 5%;
-  font-size: 7rem;
-  padding-top: 9rem;
+  font-size: 6rem;
+  padding-bottom: 10rem;
 }
 
-.pasta-box {
-  position: relative;
+.popular-container {
   display: flex;
-  width: 50%;
-  top: 40%;
-  left: 22%;
-  transform: translate(-50%, -50%);
+  justify-content: space-evenly;
 }
 
-.pasta-wrapper {
-  padding-left: 30rem;
+.column-1 {
+  width: 15%;
+}
+
+.pasta-img {
+  max-height: 400px;
+  max-width: 400px;
 }
 
 .pasta-heading {
@@ -144,10 +152,31 @@ body {
 
 .pasta-info {
   font-size: 1.5rem;
+  text-align: left;
 }
 
-/* FOOTER */
+.card-text {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
 
-.footer {
-  background: rgb(128, 179, 128);
+.card-text:hover {
+  color: white;
+}
+
+/* MENU SECTION */
+
+.menu-section {
+  background: #b0a9a9;
+  padding: 10rem 0;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+.column-2 {
+  width: 15%;
 }
