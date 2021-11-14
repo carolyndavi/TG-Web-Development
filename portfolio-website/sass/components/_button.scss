@@ -1,0 +1,23 @@
+@import "../abstracts/variables";
+
+.btn-text {
+  &:link,
+  &:visited {
+    color: $color-white;
+    border-bottom: 2px solid $color-rainbow-purple;
+    display: inline-block;
+    font-size: $default-font-size;
+    text-decoration: none;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    color: $color-rainbow-blue;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0px);
+  }
+}
