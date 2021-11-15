@@ -63,7 +63,7 @@ body {
   }
 }
 .heading-primary .heading-primary-sub {
-  background: linear-gradient(290deg, #a0e9ff 20%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+  background: linear-gradient(320deg, #a0e9ff 5%, #a162e8 40%, #f093b0 60%, #edca85 100%);
   background-clip: text;
   display: block;
   font-size: 5rem;
@@ -108,7 +108,7 @@ body {
 }
 
 .heading-secondary {
-  background: linear-gradient(30deg, #a0e9ff 10%, #a162e8 40%, #f093b0 65%, #edca85 80%);
+  background: linear-gradient(320deg, #a0e9ff 5%, #a162e8 40%, #f093b0 60%, #edca85 100%);
   background-clip: text;
   display: inline-block;
   font-size: 5rem;
@@ -186,14 +186,13 @@ body {
   transition: transform 1s;
   border-radius: 10px;
 }
-.feature-box:hover {
-  transform: translateY(-1.5rem);
-  cursor: pointer;
-}
-
-.feature-img {
+.feature-box .feature-img {
   height: 500px;
   border-radius: 10px;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+  cursor: pointer;
 }
 
 .navigation {
@@ -230,20 +229,49 @@ body {
   border-bottom: 2px solid #a162e8;
 }
 
-.top-section {
+.welcome-section {
   height: 100vh;
   background: #111;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-.top-section .top-wrapper {
+.welcome-section .top-section {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.top-section .text-box {
+.welcome-section .text-box {
   text-align: center;
+}
+
+.projects-section {
+  background: #191919;
+  padding: 20rem 0;
+}
+.projects-section .row-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section {
+  padding: 20rem 0;
+}
+.about-section .row-2 {
+  display: flex;
+  justify-content: space-around;
+}
+.about-section .row-2 .column-2 {
+  width: 40rem;
+  height: 30rem;
+}
+
+.skills-section {
+  background: #191919;
+  padding: 20rem 0;
+}
+.skills-section .row-3 {
+  display: flex;
+  justify-content: space-around;
 }
 
 .center-text {
@@ -264,29 +292,4 @@ body {
 
 .margin-bottom-small {
   margin-bottom: 1.5rem;
-}
-
-.middle-section {
-  background: #191919;
-  padding: 30rem 0;
-  margin-top: -30vh;
-}
-
-.row-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bottom-section {
-  padding: 20rem 0;
-}
-
-.row-2 {
-  display: flex;
-  justify-content: space-around;
-}
-.row-2 .column-2 {
-  width: 40rem;
-  height: 30rem;
 }/*# sourceMappingURL=main.css.map */

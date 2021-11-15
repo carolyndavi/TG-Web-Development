@@ -1,30 +1,15 @@
 @import "abstracts/variables";
+
 @import "base/base";
 @import "base/typography";
+
 @import "components/button";
 @import "components/composition";
 @import "components/feature-box";
+
 @import "layout/header";
 
-// TOP SECTION
-
-.top-section {
-  height: 100vh;
-  background: $color-dark;
-
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
-  .top-wrapper {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .text-box {
-    text-align: center;
-  }
-}
+@import "pages/home";
 
 // EXTRA REUSABLE STUFF
 
@@ -46,34 +31,4 @@
 
 .margin-bottom-small {
   margin-bottom: 1.5rem;
-}
-
-// MIDDLE SECTION
-
-.middle-section {
-  background: $color-grey-dark-1;
-  padding: 30rem 0;
-  margin-top: -30vh;
-}
-
-.row-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-// BOTTOM SECTION
-
-.bottom-section {
-  padding: 20rem 0;
-}
-
-.row-2 {
-  display: flex;
-  justify-content: space-around;
-
-  .column-2 {
-    width: 40rem;
-    height: 30rem;
-  }
 }

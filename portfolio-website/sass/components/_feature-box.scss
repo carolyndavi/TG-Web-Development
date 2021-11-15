@@ -1,4 +1,4 @@
-// MIDDLE SECTION
+// PROJECTS SECTION
 
 .feature-box {
   font-size: 1.5rem;
@@ -8,13 +8,13 @@
   transition: transform 1s;
   border-radius: 10px;
 
+  .feature-img {
+    height: 500px;
+    border-radius: 10px;
+  }
+
   &:hover {
-    transform: translateY(-1.5rem);
+    transform: translateY(-1.5rem) scale(1.03);
     cursor: pointer;
   }
-}
-
-.feature-img {
-  height: 500px;
-  border-radius: 10px;
 }

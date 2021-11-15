@@ -1,4 +1,4 @@
-// TOP SECTION
+// WELCOME SECTION
 
 .heading-primary {
   font-family: "Lora", serif;
@@ -45,11 +45,11 @@
 
   .heading-primary-sub {
     background: linear-gradient(
-      290deg,
-      #a0e9ff 20%,
-      #a162e8 50%,
-      #f093b0 70%,
-      #edca85 94%
+      320deg,
+      $color-rainbow-blue 5%,
+      $color-rainbow-purple 40%,
+      $color-rainbow-pink 60%,
+      $color-rainbow-yellow 100%
     );
     background-clip: text;
     display: block;
@@ -87,15 +87,15 @@
   padding-top: 2rem;
 }
 
-// MIDDLE SECTION
+// PROJECTS SECTION
 
 .heading-secondary {
   background: linear-gradient(
-    30deg,
-    $color-rainbow-blue 10%,
+    320deg,
+    $color-rainbow-blue 5%,
     $color-rainbow-purple 40%,
-    $color-rainbow-pink 65%,
-    $color-rainbow-yellow 80%
+    $color-rainbow-pink 60%,
+    $color-rainbow-yellow 100%
   );
   background-clip: text;
   display: inline-block;
@@ -109,7 +109,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-// BOTTOM SECTION
+// ABOUT SECTION
 
 .heading-tertiary {
   font-size: $default-font-size;
