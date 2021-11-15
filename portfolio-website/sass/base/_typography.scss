@@ -1,0 +1,125 @@
+// TOP SECTION
+
+.heading-primary {
+  font-family: "Lora", serif;
+  text-align: center;
+
+  backface-visibility: hidden;
+
+  .heading-primary-main {
+    background: linear-gradient(
+      320deg,
+      $color-rainbow-blue 5%,
+      $color-rainbow-purple 40%,
+      $color-rainbow-pink 60%,
+      $color-rainbow-yellow 100%
+    );
+    background-clip: text;
+    display: block;
+    font-size: 6rem;
+    font-weight: 500;
+
+    line-height: 7.5rem;
+
+    animation: move-in-left 1s ease-out;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @keyframes move-in-left {
+      0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+      }
+
+      80% {
+        transform: translateX(1rem);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+  }
+
+  .heading-primary-sub {
+    background: linear-gradient(
+      290deg,
+      #a0e9ff 20%,
+      #a162e8 50%,
+      #f093b0 70%,
+      #edca85 94%
+    );
+    background-clip: text;
+    display: block;
+    font-size: 5rem;
+    font-weight: 500;
+
+    line-height: 6.3rem;
+
+    animation: move-in-right 1s ease-out;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @keyframes move-in-right {
+      0% {
+        opacity: 0;
+        transform: translateX(10rem);
+      }
+
+      80% {
+        transform: translateX(-1rem);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
+  }
+}
+
+.info-text {
+  text-align: center;
+  font-size: $default-font-size;
+  padding-top: 2rem;
+}
+
+// MIDDLE SECTION
+
+.heading-secondary {
+  background: linear-gradient(
+    30deg,
+    $color-rainbow-blue 10%,
+    $color-rainbow-purple 40%,
+    $color-rainbow-pink 65%,
+    $color-rainbow-yellow 80%
+  );
+  background-clip: text;
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 500;
+  font-family: "Lora", serif;
+
+  padding-top: 2rem;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// BOTTOM SECTION
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

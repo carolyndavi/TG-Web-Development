@@ -1,0 +1,20 @@
+// MIDDLE SECTION
+
+.feature-box {
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  transition: transform 1s;
+  border-radius: 10px;
+
+  &:hover {
+    transform: translateY(-1.5rem);
+    cursor: pointer;
+  }
+}
+
+.feature-img {
+  height: 500px;
+  border-radius: 10px;
+}

@@ -1,0 +1,40 @@
+// NAVIGATION
+
+.navigation {
+  background: $color-dark;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  .navigation-nav {
+    margin: 0 auto;
+    max-width: 80%;
+    position: relative;
+  }
+
+  .navigation-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .navigation-list-item {
+    max-width: 100%;
+    min-width: 0;
+    padding: 2rem 2rem;
+  }
+
+  .navigation-link {
+    cursor: pointer;
+    color: $color-white;
+    position: relative;
+    font-size: $default-font-size;
+    list-style-type: none;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 2px solid $color-rainbow-purple;
+    }
+  }
+}

@@ -1,20 +1,3 @@
-.btn-text:link, .btn-text:visited {
-  color: #fff;
-  border-bottom: 2px solid #a162e8;
-  display: inline-block;
-  font-size: 1.6rem;
-  text-decoration: none;
-  padding: 3px;
-  transition: all 0.2s;
-}
-.btn-text:hover {
-  color: #a0e9ff;
-  transform: translateY(-2px);
-}
-.btn-text:active {
-  transform: translateY(0px);
-}
-
 *,
 *::before,
 *::after {
@@ -33,56 +16,6 @@ body {
   font-weight: 400;
   color: #fff;
   box-sizing: border-box;
-}
-
-.navigation {
-  background: #111;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-.navigation .navigation-nav {
-  margin: 0 auto;
-  max-width: 80%;
-  position: relative;
-}
-.navigation .navigation-list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.navigation .navigation-list-item {
-  max-width: 100%;
-  min-width: 0;
-  padding: 2rem 2rem;
-}
-.navigation .navigation-link {
-  cursor: pointer;
-  color: #fff;
-  position: relative;
-  font-size: 1.6rem;
-  list-style-type: none;
-  text-decoration: none;
-}
-.navigation .navigation-link:hover {
-  border-bottom: 2px solid #a162e8;
-}
-
-.top-section {
-  height: 100vh;
-  background: #111;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
-.top-section .top-wrapper {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.top-section .text-box {
-  text-align: center;
 }
 
 .heading-primary {
@@ -174,10 +107,143 @@ body {
   padding-top: 2rem;
 }
 
-.middle-section {
-  background: #191919;
-  padding: 30rem 0;
-  margin-top: -30vh;
+.heading-secondary {
+  background: linear-gradient(30deg, #a0e9ff 10%, #a162e8 40%, #f093b0 65%, #edca85 80%);
+  background-clip: text;
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 500;
+  font-family: "Lora", serif;
+  padding-top: 2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.view-more-btn:link, .view-more-btn:visited {
+  color: #fff;
+  border-bottom: 2px solid #a162e8;
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 3px;
+  transition: all 0.2s;
+}
+.view-more-btn:hover {
+  color: #a0e9ff;
+  transform: translateY(-2px);
+}
+.view-more-btn:active {
+  transform: translateY(0px);
+}
+
+.view-more {
+  display: flex;
+  justify-content: center;
+  padding-top: 15rem;
+}
+
+.composition {
+  position: relative;
+}
+.composition .composition-photo {
+  position: absolute;
+  left: 4rem;
+  top: -3rem;
+  width: 90%;
+  border-radius: 2rem;
+  transition: all 0.2s;
+  -webkit-animation: grow-in-size-image 2s ease-in-out infinite;
+          animation: grow-in-size-image 2s ease-in-out infinite;
+}
+@-webkit-keyframes grow-in-size-image {
+  50% {
+    transform: scale(1.05);
+  }
+}
+@keyframes grow-in-size-image {
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.feature-box {
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  transition: transform 1s;
+  border-radius: 10px;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem);
+  cursor: pointer;
+}
+
+.feature-img {
+  height: 500px;
+  border-radius: 10px;
+}
+
+.navigation {
+  background: #111;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.navigation .navigation-nav {
+  margin: 0 auto;
+  max-width: 80%;
+  position: relative;
+}
+.navigation .navigation-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.navigation .navigation-list-item {
+  max-width: 100%;
+  min-width: 0;
+  padding: 2rem 2rem;
+}
+.navigation .navigation-link {
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  font-size: 1.6rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+.navigation .navigation-link:hover {
+  border-bottom: 2px solid #a162e8;
+}
+
+.top-section {
+  height: 100vh;
+  background: #111;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.top-section .top-wrapper {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-section .text-box {
+  text-align: center;
 }
 
 .center-text {
@@ -200,81 +266,27 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.heading-secondary {
-  background: linear-gradient(30deg, #a0e9ff 10%, #a162e8 40%, #f093b0 65%, #edca85 80%);
-  background-clip: text;
-  display: inline-block;
-  font-size: 5rem;
-  font-weight: 500;
-  font-family: "Lora", serif;
-  padding-top: 2rem;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.middle-section {
+  background: #191919;
+  padding: 30rem 0;
+  margin-top: -30vh;
 }
 
-.row {
+.row-1 {
   display: flex;
-  justify-content: space-around;
-}
-.row .column-1,
-.row .column-2 {
-  width: 40rem;
-  height: 30rem;
-}
-
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
-.paragraph {
-  font-size: 1.6rem;
-}
-.paragraph:not(:last-child) {
-  margin-bottom: 3rem;
-}
-
-.composition {
-  position: relative;
-}
-.composition .composition-photo {
-  position: absolute;
-  left: 4rem;
-  width: 90%;
-  border-radius: 2rem;
-  transition: all 0.2s;
-  -webkit-animation: grow-in-size-image 2s ease-in-out infinite;
-          animation: grow-in-size-image 2s ease-in-out infinite;
-}
-@-webkit-keyframes grow-in-size-image {
-  50% {
-    transform: scale(1.05);
-  }
-}
-@keyframes grow-in-size-image {
-  50% {
-    transform: scale(1.05);
-  }
+  flex-direction: column;
+  align-items: center;
 }
 
 .bottom-section {
   padding: 20rem 0;
 }
 
-.row-bottom {
+.row-2 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
-
-.feature-box {
-  border: 1px solid #fff;
-  font-size: 1.5rem;
-  padding: 2.5rem;
-  text-align: center;
-  border-radius: 3px;
-  transition: transform 1s;
-}
-.feature-box:hover {
-  transform: translateY(-1.5rem);
-  cursor: pointer;
+.row-2 .column-2 {
+  width: 40rem;
+  height: 30rem;
 }/*# sourceMappingURL=main.css.map */
