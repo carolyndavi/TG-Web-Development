@@ -1,0 +1,45 @@
+.navigation {
+  background: $color-dark;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+
+  .navigation-nav {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .navigation-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 81%;
+  }
+
+  .navigation-list-item {
+    padding: 2rem 2rem;
+  }
+
+  .navigation-link {
+    cursor: pointer;
+    color: $color-white;
+    font-size: $default-font-size;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 2px solid $color-rainbow-purple;
+    }
+  }
+
+  @include respond(phone-s) {
+    width: 105%;
+  }
+
+  @include respond(phone-m) {
+    width: 105%;
+  }
+}

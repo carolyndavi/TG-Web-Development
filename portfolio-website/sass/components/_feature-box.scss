@@ -9,8 +9,10 @@
   border-radius: 10px;
 
   .feature-img {
-    height: 500px;
+    display: inline-block;
+    width: 70%;
     border-radius: 10px;
+    position: relative;
   }
 
   &:hover {

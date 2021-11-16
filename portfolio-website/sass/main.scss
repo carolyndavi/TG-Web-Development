@@ -1,34 +1,17 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
 @import "abstracts/variables";
 
 @import "base/base";
 @import "base/typography";
+@import "base/utilities";
 
 @import "components/button";
-@import "components/composition";
 @import "components/feature-box";
+@import "components/navigation";
 
+@import "layout/footer";
 @import "layout/header";
 
+@import "pages/projects";
 @import "pages/home";
-
-// EXTRA REUSABLE STUFF
-
-.center-text {
-  text-align: center;
-}
-
-.margin-bottom-xl-big {
-  margin-bottom: 12rem;
-}
-
-.margin-bottom-big {
-  margin-bottom: 8rem;
-}
-
-.margin-bottom-medium {
-  margin-bottom: 4rem;
-}
-
-.margin-bottom-small {
-  margin-bottom: 1.5rem;
-}

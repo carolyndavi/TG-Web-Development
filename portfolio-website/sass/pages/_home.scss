@@ -19,6 +19,7 @@
 // PROJECTS SECTION
 
 .projects-section {
+  border-radius: 30px;
   background: $color-grey-dark-1;
   padding: 20rem 0;
 
@@ -26,6 +27,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @include respond(phone-m) {
+    border-radius: 0;
+    padding: 10rem 0;
+  }
+
+  @include respond(phone-l) {
+    border-radius: 0;
+    padding: 10rem 0;
   }
 }
 
@@ -39,20 +50,47 @@
     justify-content: space-around;
 
     .column-2 {
-      width: 40rem;
-      height: 30rem;
+      width: 60rem;
     }
+
+    .about-photo {
+      position: relative;
+      left: 9rem;
+      border-radius: 2rem;
+      width: 70%;
+    }
+  }
+
+  @include respond(phone-m) {
+    border-radius: 0;
+    padding: 10rem 0;
+  }
+
+  @include respond(phone-l) {
+    border-radius: 0;
+    padding: 10rem 0;
   }
 }
 
 // SKILLS SECTION
 
 .skills-section {
+  border-radius: 30px;
   background: $color-grey-dark-1;
   padding: 20rem 0;
 
   .row-3 {
     display: flex;
     justify-content: space-around;
+  }
+
+  @include respond(phone-m) {
+    border-radius: 0;
+    padding: 10rem 0;
+  }
+
+  @include respond(phone-l) {
+    border-radius: 0;
+    padding: 10rem 0;
   }
 }

@@ -1,0 +1,27 @@
+.center-text {
+  text-align: center;
+}
+
+.margin-bottom-xl-big {
+  margin-bottom: 16rem;
+
+  @include respond(phone-m) {
+    margin-bottom: 6rem;
+  }
+
+  @include respond(phone-l) {
+    margin-bottom: 6rem;
+  }
+}
+
+.margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem;
+}

@@ -6,15 +6,23 @@
     color: $color-white;
     border-bottom: 2px solid $color-rainbow-purple;
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 3rem;
     text-decoration: none;
     padding: 3px;
     transition: all 0.2s;
+
+    @include respond(phone-m) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone-l) {
+      font-size: 2.5rem;
+    }
   }
 
   &:hover {
     color: $color-rainbow-blue;
-    transform: translateY(-2px);
+    transform: translateY(-5px);
   }
 
   &:active {
@@ -26,4 +34,12 @@
   display: flex;
   justify-content: center;
   padding-top: 15rem;
+
+  @include respond(phone-m) {
+    padding-top: 6rem;
+  }
+
+  @include respond(phone-l) {
+    padding-top: 6rem;
+  }
 }
