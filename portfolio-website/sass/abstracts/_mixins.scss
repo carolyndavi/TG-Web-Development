@@ -1,0 +1,86 @@
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERIES MANAGER
+
+/*
+
+0-600px:    Phone
+600-900px:  Tablet portrait
+900-1200px: Tables landscape
+
+[1200 - 1800] is where our normal styles apply
+
+1800px + :  Big desktop
+
+$breakpoint argument choices:
+- phone-s
+- phone-m
+- phone-l
+- phone-xl
+- tablet
+- laptop
+- laptop-l
+- desktop
+
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone-s {
+    @media (max-width: 20em) {
+      @content; //320px
+    }
+  }
+
+  @if $breakpoint == phone-m {
+    @media (max-width: 23.4375em) {
+      @content; //375px
+    }
+  }
+
+  @if $breakpoint == phone-l {
+    @media (max-width: 26.5625em) {
+      @content; //425px
+    }
+  }
+
+  @if $breakpoint == phone-xl {
+    @media (max-width: 33.75em) {
+      @content; //572px
+    }
+  }
+
+  @if $breakpoint == phone-xxl {
+    @media (max-width: 38.75em) {
+      @content; //620px
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media (max-width: 48em) {
+      @content; //768px;
+    }
+  }
+
+  @if $breakpoint == laptop {
+    @media (max-width: 64em) {
+      @content; //1024;
+    }
+  }
+
+  @if $breakpoint == laptop-l {
+    @media (max-width: 90em) {
+      @content; //1440;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media (max-width: 160em) {
+      @content; //2560;
+    }
+  }
+}
