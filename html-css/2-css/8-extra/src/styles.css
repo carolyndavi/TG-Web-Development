@@ -25,8 +25,7 @@ body {
 }
 
 .navigation-nav {
-  width: 100%;
-  max-width: 2400px;
+  width: 90%;
   margin: 0 auto;
   position: relative;
 }
@@ -39,8 +38,6 @@ body {
 }
 
 .navigation-list-item {
-  max-width: 100%;
-  min-width: 0;
   margin-left: 20px;
 }
 
@@ -91,7 +88,7 @@ body {
   width: 15rem;
   height: 5rem;
   background: transparent;
-  border: 2px solid rgb(128, 179, 128);
+  border: 2px solid white;
   font-family: "Lobster", cursive;
   font-size: 2rem;
   transition: all 1s ease;
@@ -174,9 +171,61 @@ body {
 
 .menu-container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .column-2 {
-  width: 15%;
+  width: 20%;
+  height: 20%;
+}
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 900px) and (max-width: 1500px) {
+  .navigation-nav {
+    width: 90%;
+  }
+
+  .top-container {
+    height: 50vh;
+  }
+
+  .heading {
+    font-size: 5rem;
+  }
+
+  .text-box {
+    top: 60%;
+  }
+
+  .info {
+    font-size: 1.5rem;
+  }
+
+  .heading-secondary {
+    font-size: 4rem;
+  }
+
+  .column-1 {
+    width: 21%;
+  }
+
+  .pasta-img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .pasta-heading {
+    font-size: 3rem;
+  }
+
+  .pasta-info {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .column-2 {
+    width: 21%;
+  }
 }
