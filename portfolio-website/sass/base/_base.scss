@@ -28,9 +28,33 @@ body {
   font-weight: 400;
   color: $color-white;
   box-sizing: border-box;
-  padding: 0 20rem 0 20rem;
+  padding: 0 30rem 0 30rem;
+
+  @include respond(laptop) {
+    padding: 0 20rem 0 20rem;
+  }
+
+  @include respond(laptop-l) {
+    padding: 0 25rem 0 25rem;
+  }
+
+  @include respond(tablet) {
+    padding: 0 15rem 0 15rem;
+  }
+
+  @include respond(phone-xxl) {
+    padding: 0 12rem 0 12rem;
+  }
+
+  @include respond(phone-s) {
+    padding: 0;
+  }
 
   @include respond(phone-m) {
+    padding: 0;
+  }
+
+  @include respond(phone-xl) {
     padding: 0;
   }
 

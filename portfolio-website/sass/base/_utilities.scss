@@ -5,6 +5,10 @@
 .margin-bottom-xl-big {
   margin-bottom: 16rem;
 
+  @include respond(laptop-l) {
+    margin-bottom: 10rem;
+  }
+
   @include respond(phone-m) {
     margin-bottom: 6rem;
   }

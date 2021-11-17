@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    max-width: 81%;
+    width: 69%;
   }
 
   .navigation-list-item {
@@ -29,17 +29,10 @@
     color: $color-white;
     font-size: $default-font-size;
     text-decoration: none;
+    transition: text-shadow 1s;
 
     &:hover {
-      border-bottom: 2px solid $color-rainbow-purple;
+      border-bottom: 2px solid $color-red;
     }
-  }
-
-  @include respond(phone-s) {
-    width: 105%;
-  }
-
-  @include respond(phone-m) {
-    width: 105%;
   }
 }

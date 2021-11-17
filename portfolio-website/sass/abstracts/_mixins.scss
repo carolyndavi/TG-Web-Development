@@ -1,33 +1,4 @@
-@mixin absolute-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 // MEDIA QUERIES MANAGER
-
-/*
-
-0-600px:    Phone
-600-900px:  Tablet portrait
-900-1200px: Tables landscape
-
-[1200 - 1800] is where our normal styles apply
-
-1800px + :  Big desktop
-
-$breakpoint argument choices:
-- phone-s
-- phone-m
-- phone-l
-- phone-xl
-- tablet
-- laptop
-- laptop-l
-- desktop
-
-*/
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone-s {
@@ -67,20 +38,20 @@ $breakpoint argument choices:
   }
 
   @if $breakpoint == laptop {
-    @media (max-width: 64em) {
-      @content; //1024;
+    @media (max-width: 70em) {
+      @content; //1024px;
     }
   }
 
   @if $breakpoint == laptop-l {
     @media (max-width: 90em) {
-      @content; //1440;
+      @content; //1440px;
     }
   }
 
   @if $breakpoint == desktop {
     @media (max-width: 160em) {
-      @content; //2560;
+      @content; //2560px;
     }
   }
 }

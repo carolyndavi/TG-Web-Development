@@ -4,12 +4,16 @@
   &:link,
   &:visited {
     color: $color-white;
-    border-bottom: 2px solid $color-rainbow-purple;
+    border-bottom: 2px solid $color-red;
     display: inline-block;
     font-size: 3rem;
     text-decoration: none;
     padding: 3px;
-    transition: all 0.2s;
+    transition: all 1s;
+
+    @include respond(laptop-l) {
+      font-size: 2.5rem;
+    }
 
     @include respond(phone-m) {
       font-size: 2.5rem;
@@ -21,8 +25,9 @@
   }
 
   &:hover {
-    color: $color-rainbow-blue;
+    color: $color-white;
     transform: translateY(-5px);
+    text-shadow: 0 0 15px $color-white;
   }
 
   &:active {
@@ -35,11 +40,19 @@
   justify-content: center;
   padding-top: 15rem;
 
+  @include respond(laptop-l) {
+    padding-top: 10rem;
+  }
+
   @include respond(phone-m) {
     padding-top: 6rem;
   }
 
   @include respond(phone-l) {
+    padding-top: 6rem;
+  }
+
+  @include respond(phone-xl) {
     padding-top: 6rem;
   }
 }
