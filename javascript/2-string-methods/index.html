@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods</title>
+  </head>
+  <body>
+    <h1>String Methods</h1>
+    <h3 style="width: 50%">Opdracht 2.1</h3>
+    <p>d: Ik krijg dan de letter D en H te zien.</p>
+    <hr />
+    <h3 style="width: 50%">
+      Opdracht 2.2: substring() en slice() lijken erg op elkaar. We onderzoeken
+      de verschillen. Test dit met een eigen string, of gebruik het vorige
+      voorbeeld. substring() en slice() kunnen 2 waardes meegegeven worden - een
+      index waar de nieuwe waarde begint en een index waar deze moet eindigen.
+    </h3>
+    <p>
+      a: Dan krijg je als nog een letter terug.
+      <br />
+      b: Dan krijgt je empty string terug.
+      <br />
+      c: Je krijgt de voledige zin.
+      <br />
+      d: je krijg dan de laatste character als je -1 doet.
+    </p>
+
+    <script>
+      /*
+      // Opdracht 2.1
+      
+      // a
+      let someKittens =
+        "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+      let firstString = someKittens.slice(0, 44);
+      let secondString = someKittens.slice(44, 81);
+      console.log(secondString);
+
+      // b
+      let upperString = someKittens.slice(29, 36);
+      console.log(upperString.toUpperCase());
+
+      // c
+      console.log(upperString.indexOf("k"), upperString.lastIndexOf("s"));
+
+      // d
+      console.log(firstString.charAt());
+      console.log(secondString.charAt());
+
+      // Opdracht 2.2
+
+      let mainString = "I have an coffee addiction.";
+      console.log(mainString.substring(-1));
+      console.log(mainString.slice(-1));
+
+      */
+
+      // Opdracht 2.3
+
+      let someKittens = "Die nieuwe kittens zijn zo schattig!";
+      let wordArray = someKittens.split(" ");
+      console.log(wordArray);
+    </script>
+  </body>
+</html>
