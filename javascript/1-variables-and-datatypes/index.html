@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables & Datatypes</title>
+  </head>
+  <body>
+    <h1>Variables & Datatypes</h1>
+    <h3 style="width: 50%">
+      Opdracht 1.1: We onderzoeken het verschil tussen var, let en const.
+      Gegeven zijn een aantal voorbeelden - schrijf eerst je verwachtingen op
+      voordat je ze zelf nabootst. Kijk vervolgens wat er bij jou in de console
+      gelogd wordt - is dat wat je verwachtte? Zo nee, deel het dan aan het
+      einde van de dag met je groep.
+    </h3>
+    <p>
+      a: Je zult een error krijgen, je kan niet twee keer de zelfde variable
+      naam gebruiken.
+      <br />
+      b: De eerste console.log zal "Let Tekst" zijn maar de tweede console.log
+      zal "Let Tekst Twee!" zijn. Omdat je na de eerste console.log letOefening
+      een nieuwe value geeft.
+      <br />
+      c: Je zult als eerst "Let Tekst" in de console krijgen. Maar bij de tweede
+      console.log zal er een error plaatsvinden. Je mag een const variable
+      namelijk niet aanpassen.
+      <br />
+      d: Je zult "Var Tekst", "Var Tekst Twee!", "Var Tekst Drie!" allemaal in
+      de console krijgen.
+    </p>
+    <hr />
+    <h3 style="width: 50%">
+      Opdracht 1.2: We onderzoeken de verschillende datatypes.
+    </h3>
+    <p>
+      a: Je krijgt de volgende string te zien in de console: "This is a string,
+      with the value: Number" Ik had dit verwacht omdat met typeof je het
+      datatype vraagt van typeQuestion, en dat is een string omdat "Number"
+      tussen aanhalings tekens is.
+      <br />
+      b:
+      <br />
+      This is a boolean, with the value: true
+      <br />
+      This is a boolean, with the value: false
+      <br />
+      This is a undefined, with the value: undefined
+      <br />
+      This is a number, with the value: 22
+      <br />
+      This is a bigint, with the value: 22
+      <br />
+      Uncaught ReferenceError: symbol is not defined
+      <br />
+      This is a object, with the value: null
+      <br />
+      This is a object, with the value: [object Object]
+      <br />
+      This is a object, with the value: [object Object]
+      <br />
+      This is a function, with the value: function calculateSomething() {}
+    </p>
+    <hr />
+    <h3 style="width: 50%">Opdracht 1.3: Gegeven de volgende code:</h3>
+    <p>
+      c: Je krijgt dan in de console te zien de string: 55. Omdat de string "5"
+      aangeplakt wordt aan het nummer 5 en nummer 5 wordt veranderd in een
+      string. Het wordt niet bij elkaar opgeteld.
+      <br />
+      d: Je krijgt dan te zien in de console het nummer 10 te zien. Nu wordt het
+      nummer 5 bij een andere nummer 5 opgeteld.
+      <br />
+      c:
+      <br />
+      true
+      <br />
+      false
+      <br />
+      false
+      <br />
+      true
+    </p>
+    <hr />
+    <h3 style="width: 50%">
+      Opdracht 1.3: We gaan operators wat nader onderzoeken, en ermee
+      experimenteren.
+    </h3>
+    <p>
+      a: Je krijgt 2 en 2 te zien.
+      <br />
+      b: Je krijgt dan 1 en 3 te zien.
+      <br />
+      c: Je krijgt dan 4 en 2.4 te zien.
+      <br />
+      d: Je krijgt dan false te zien.
+      <br />
+      e:
+      <br />
+      false
+      <br />
+      Uncaught ReferenceError: boolean is not defined
+      <br />
+      true
+      <br />
+      false
+      <br />
+      false
+      <br />
+      false
+      <br />
+      true
+      <br />
+      true
+    </p>
+
+    <script>
+      let someNumber = undefined;
+      console.log(!someNumber);
+    </script>
+  </body>
+</html>
