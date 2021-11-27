@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1>Arrays & Loops</h1>
+
+    <script>
+      // Opdracht 5.1
+
+      // A
+
+      // const numberArray = [2, 5, 1, 8, 9, 7, 3, 6, 4, 10];
+      // console.log(numberArray);
+
+      // B
+
+      // const fruitArray = ["aardbei", "abrikoos", "ananas", "appel", "avocado"];
+      // console.log(fruitArray);
+
+      // C
+
+      // console.log(fruitArray[0], fruitArray[2]);
+
+      // D
+
+      // const randomIndex = Math.floor(Math.random() * fruitArray.length);
+      // console.log(randomIndex);
+      // console.log(fruitArray[randomIndex]);
+
+      // E
+
+      // console.log(fruitArray.length);
+
+      // F
+
+      // G
+
+      // fruitArray[3] = "peer";
+      // console.log(fruitArray);
+
+      // H
+
+      // Opdracht 5.2
+
+      // A
+
+      // const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
+
+      // for (let i = 0; i < dutchSports.length; i++) {
+      //   console.log(dutchSports[i]);
+      // }
+
+      // B
+
+      // for (let sports of dutchSports) {
+      // console.log(sports);
+      // }
+
+      // for (let sports in dutchSports) {
+      // console.log(sports);
+      // }
+
+      // C
+
+      // const numbers = [
+      //   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      //   21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+      // ];
+
+      // for (let i = 0; i < 21; i++) {
+      // console.log(numbers[i]);
+      // }
+
+      // D & E & F
+
+      // for (let i = 0; i < 10; i++) {
+      // console.log(numbers[i]);
+
+      // for (let j = 1; j < 21; j += 2) {
+      // console.log(numbers[j]);
+
+      // for (let k = 2; k < 31; k += 3) {
+      // console.log(numbers[k]);
+      // }
+      // }
+      // }
+
+      // G
+
+      // Opdracht 5.3
+
+      // A
+
+      // const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
+      // dutchSports.push("Zeilen", "Zwemmen");
+      // console.log(dutchSports);
+
+      // // B
+
+      // dutchSports.unshift("Vollybal");
+      // console.log(dutchSports);
+
+      // // C
+
+      // const ballSports = dutchSports.slice(0, 3);
+      // console.log(ballSports);
+
+      // // D
+
+      // dutchSports.splice(0, 3);
+      // console.log(dutchSports);
+
+      // // E
+
+      // dutchSports.sort();
+      // console.log(dutchSports);
+
+      // // F
+
+      // dutchSports.forEach(function (item, index, array) {
+      //   console.log(item);
+      // });
+
+      // G
+
+      // Opdracht 5.4
+
+      // A
+
+      const array = Array.from("Carolyn");
+      console.log(array);
+
+      // B
+
+      const words = ["I", "Love", "Coffee", "So", "Much"];
+      const filterWords = words.filter((words) => words.length > 5);
+      console.log(filterWords);
+
+      // C
+
+      const findWords = words.find((words) => words.length > 5);
+      console.log(findWords);
+
+      // D
+
+      const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+      const even = (number) => number % 2 === 0;
+      console.log(numberArray.some(even));
+
+      // E
+
+      const numberUnderFive = (number) => number < 5;
+      console.log(numberArray.every(numberUnderFive));
+      console.log(numberArray.includes(6));
+      console.log(numberArray.includes(15));
+    </script>
+  </body>
+</html>
