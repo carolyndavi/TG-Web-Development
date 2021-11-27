@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+
+    
+  </head>
+  <body>
+    <h1>Functions</h1>
+    <h3>Opdracht 4.1</h3>
+    <p>
+      A. Maak een button en verbind er een functie aan. Zorg ervoor dat de
+      functie in de console “Hello World” logt.
+      <br />
+      <br />
+      <button onclick="pressButtonOne()">Button #1</button>
+    </p>
+
+    <p>
+      B. Maak een input element en geef het een bepaald ID. Sla dat ID op in een
+      variabele via document.GetElementByID().
+      <br />
+      <br />
+      <button id="buttonTwo" onclick="pressButtonTwo()">Button #2</button>
+    </p>
+
+    <p>
+      C. Ik krijg dit te zien in de console:
+      <code
+        >&lt;button id=&quot;buttonOne&quot;
+        onclick=&quot;pressButtonTwo()&quot;&gt;</code
+      >
+    </p>
+    <hr />
+    <h3>Opdracht 4.2</h3>
+    <p>A. 1</p>
+    <p>
+      <div></div>
+      <div class="className"></div>
+      <div></div>
+      <div></div>
+    </p>
+    <p>A. 2</p>
+    <p>
+    </p>
+
+    <script>
+      // Opdracht 4.1
+
+      // A
+
+      function pressButtonOne() {
+        console.log("Hello World!");
+      }
+
+      // B & C & D
+
+      const saveButtonTwo = document.getElementById("buttonTwo");
+
+      const logButtonTwo = function pressButtonTwo(saveButtonTwo) {
+        console.log(buttonTwo);
+      }
+
+      console.log(logButtonTwo(saveButtonTwo));
+
+      // Opdracht 4.2
+
+      // A. 1
+
+      const className = document.getElementsByClassName("className");
+      console.log(className);
+
+      // A. 2
+
+      
+      
+    </script>
+  </body>
+</html>
