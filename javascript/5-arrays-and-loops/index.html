@@ -79,15 +79,15 @@
       // D & E & F
 
       // for (let i = 0; i < 10; i++) {
-      // console.log(numbers[i]);
+      //   console.log(numbers[i]);
 
-      // for (let j = 1; j < 21; j += 2) {
-      // console.log(numbers[j]);
+      //   for (let j = 1; j < 21; j += 2) {
+      //     console.log(numbers[j]);
 
-      // for (let k = 2; k < 31; k += 3) {
-      // console.log(numbers[k]);
-      // }
-      // }
+      //     for (let k = 2; k < 31; k += 3) {
+      //       console.log(numbers[k]);
+      //     }
+      //   }
       // }
 
       // G
@@ -96,7 +96,7 @@
 
       // A
 
-      // const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
+      const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
       // dutchSports.push("Zeilen", "Zwemmen");
       // console.log(dutchSports);
 
@@ -128,24 +128,65 @@
 
       // G
 
+      const sportsLength = [...dutchSports];
+
+      sportsLength.forEach(function (sport) {
+        console.log(sport.length);
+      });
+
       // Opdracht 5.4
 
       // A
 
       const array = Array.from("Carolyn");
-      console.log(array);
+      // console.log(array);
 
       // B
 
-      const words = ["I", "Love", "Coffee", "So", "Much"];
-      const filterWords = words.filter((words) => words.length > 5);
-      console.log(filterWords);
+      const nums = [32, 35, 67, 54, 109, 102, 32, 9];
+      const odds = nums.filter((n) => n % 2 === 1);
+      const evens = nums.filter((n) => n % 2 === 0);
 
       // C
 
+      const movies = [
+        "The Fantastic Mr. Fox",
+        "Mr. and Mrs. Smith",
+        "Mrs. Doubtfire",
+        "Mr. Deeds",
+      ];
+
+      const movie = movies.find((movie) => {
+        return movie.includes("Mrs");
+      });
+
       // D
 
+      const words = ["dog", "dig", "log", "bag"];
+
+      const someStartWithLetterD = words.some((word) => word[0] === "d");
+
       // E
+
+      const all3Letters = words.every((word) => word.length === 3);
+
+      const allEndWithLetterG = words.every((word) => {
+        const last = word.length - 1;
+        return word[last] === "g";
+      });
+
+      // F
+
+      const ingredients = [
+        "water",
+        "flour",
+        "cheese",
+        "brown sugar",
+        "shrimp",
+        "butter",
+      ];
+
+      console.log(ingredients.includes("fish"));
     </script>
   </body>
 </html>
