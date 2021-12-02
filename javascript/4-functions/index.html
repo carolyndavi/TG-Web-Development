@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="#" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Functions</title>
+    <style>
+      .className {
+        width: 50px;
+        height: 50px;
+        background: blue;
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
     <h1>Functions</h1>
@@ -22,17 +31,45 @@
       variabele via document.GetElementByID().
       <br />
       <br />
+      <input type="text" id="inputText" placeholder="I Love Coffee" />
     </p>
     <hr />
     <h3>Opdracht 4.2</h3>
+
     <p>A. 1</p>
-    <ul>
-      <li class="className">First Thing</li>
-      <li>Second Thing</li>
-      <li class="className">Third Thing</li>
-    </ul>
+    <div class="className"></div>
+    <div class="className"></div>
+    <div class="className"></div>
+    <div class="className"></div>
+
     <p>A. 2</p>
+
+    <p>A. 3</p>
+
+    <p>A. 4</p>
+    <ul>
+      <li>First Thing</li>
+      <li>Second Thing</li>
+      <li>Third Thing</li>
+    </ul>
+
+    <p>A. 5</p>
+    <form action="">
+      <input type="text" placeholder="Bear Name" />
+      <input type="password" placeholder="password" />
+      <input type="submit" />
+    </form>
+
+    <p>A. 6</p>
     <h2>Hello World!</h2>
+
+    <hr />
+
+    <h3>Opdracht 4.3</h3>
+    <p>A.</p>
+    <button class="randomNumber" onclick="randomNumberFunction()">
+      CLICK ME FOR RANDOM NUMBER
+    </button>
 
     <script>
       // Opdracht 4.1
@@ -43,19 +80,67 @@
         console.log("Hello World!");
       }
 
+      // B
+
+      const inputElement = document.getElementById("inputText");
+      console.log(inputElement.value);
+
+      // C
+
+      const logInput = (textInputElement) => {
+        return textInputElement.value + ` And Dancing!`;
+      };
+
+      console.log(logInput(inputElement));
+
       // Opdracht 4.2
 
       // A. 1 document.getElementsByClassName
+      const divsClass = document.getElementsByClassName("className");
+      console.log(divsClass);
 
       // A. 2 document.getElementsByTagName
 
+      const divTag = document.getElementsByTagName("div");
+      console.log(divTag);
+
       // A. 3 document.querySelector
+
+      const divQuerySelector = document.querySelector(".className");
+      console.log(divQuerySelector);
 
       // A. 4 document.querySelectorAll
 
+      const divQuerySelectorAll = document.querySelectorAll(".className");
+      console.log(divQuerySelectorAll);
+
       // A. 5 element.innerHTML
 
+      const form = document.querySelector("form");
+      console.log(form.innerHTML);
+
       // A. 6 element.innerText
+
+      const h2 = document.querySelector("h2");
+      console.log((h2.innerText = "I AM HUNGRY"));
+
+      // Opdracht 4.3
+
+      // A
+
+      const randomNumber1 = document.getElementById("randomNumber");
+      const randomNumberFunction = function () {
+        console.log(Math.random());
+      };
+
+      // B
+
+      const randomNumber2 = document.getElementById("randomNumber");
+      const randomNumberFunction2 = function (y) {
+        console.log(Math.floor(Math.random() * y));
+      };
+
+      // C
     </script>
   </body>
 </html>
