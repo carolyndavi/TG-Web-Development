@@ -67,9 +67,26 @@
 
     <h3>Opdracht 4.3</h3>
     <p>A.</p>
-    <button class="randomNumber" onclick="randomNumberFunction()">
+    <button class="randomNumber1" onclick="randomNumberFunction1()">
       CLICK ME FOR RANDOM NUMBER
     </button>
+    <p>B.</p>
+    <button class="randomNumber2" onclick="randomNumberFunction2()">
+      CLICK ME FOR RANDOM NUMBER
+    </button>
+    <p>C.</p>
+    <button class="randomNumber3" onclick="randomNumberFunction3()">
+      CLICK ME FOR LOWEST NUMBER
+    </button>
+    <p>D.</p>
+    <button class="randomNumber4" onclick="randomNumberFunction4()">
+      CLICK ME FOR HIGHEST NUMBER
+    </button>
+
+    <hr />
+    <h3>Opdracht 4.4</h3>
+    <p>B.</p>
+    <div class="nameInput"></div>
 
     <script>
       // Opdracht 4.1
@@ -128,19 +145,47 @@
 
       // A
 
-      const randomNumber1 = document.getElementById("randomNumber");
-      const randomNumberFunction = function () {
+      const randomNumber1 = document.getElementById("randomNumber1");
+      const randomNumberFunction1 = function () {
         console.log(Math.random());
       };
 
       // B
 
-      const randomNumber2 = document.getElementById("randomNumber");
-      const randomNumberFunction2 = function (y) {
-        console.log(Math.floor(Math.random() * y));
+      const randomNumber2 = document.getElementById("randomNumber2");
+      const randomNumberFunction2 = function () {
+        console.log(Math.floor(Math.random() * 3) + 1);
       };
 
       // C
+      const randomNumber3 = document.getElementById("randomNumber3");
+      const randomNumberFunction3 = () => {
+        console.log(Math.min(8, 5, 3, 10));
+      };
+
+      // C
+      const randomNumber4 = document.getElementById("randomNumber4");
+      const randomNumberFunction4 = () => {
+        console.log(Math.max(8, 5, 3, 10));
+      };
+
+      // Opdracht 4.4
+
+      // A.
+
+      const nameList = ["Cylvia", "Miki", "Mike", "Tristan", "Carolyn"];
+
+      const checkName = function (name) {
+        if (name !== nameList.includes(name)) {
+          return `${name} is in the name list!`;
+        } else {
+          return `${name} is not in the name list!`;
+        }
+      };
+
+      console.log(checkName("Carolyn"));
+
+      // B.
     </script>
   </body>
 </html>
