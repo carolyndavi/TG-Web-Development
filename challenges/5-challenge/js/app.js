@@ -34,7 +34,6 @@ function openModal() {
 function closeModal() {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
-  console.log(modal.classList);
 }
 
 openButton.addEventListener('click', openModal);
