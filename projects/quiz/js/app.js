@@ -33,7 +33,6 @@ const questions = [
   },
 ];
 
-// options i need in my code
 let currentQuestionIndex = 0;
 let progressCounter = 0;
 let questionText;
@@ -79,15 +78,6 @@ function startQuiz() {
   quizContainer.classList.remove('hide-element');
   buttonContainer.classList.remove('hide-element');
 
-  currentQuestionIndex = 0;
-
-  createCounter(); // calling createCounter function
-  createQuestions(); // calling createQuestions function
-  createChoices(); // calling createChoices function
-}
-
-// createCounter function
-const createCounter = () => {
   const progressContainer = document.createElement('div');
   progressContainer.classList.add('progress-container');
   quizContainer.appendChild(progressContainer);
@@ -101,7 +91,12 @@ const createCounter = () => {
   progressText.innerText = `${progressCounter + 1} / ${questions.length}`;
   progressItem.appendChild(progressText);
   progressCounter++;
-};
+
+  currentQuestionIndex = 0;
+
+  createQuestions();
+  createChoices();
+}
 
 // createQuestions function
 const createQuestions = () => {
