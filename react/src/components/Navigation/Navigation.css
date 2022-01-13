@@ -1,0 +1,18 @@
+.Navigation {
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+a {
+  padding: 5rem;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}

@@ -1,25 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Navigation.css'
 
 const Navigation = () => {
   return (
-    <ul>
-      <Link to='/'>
-        <li>Home</li>
-      </Link>
-      <Link to='/introduction'>
-        <li>Introduction</li>
-      </Link>
-      <Link to='/sharedState'>
-        <li>Shared State</li>
-      </Link>
-      <Link to='/listsAndKeys'>
-        <li>Lists and Keys</li>
-      </Link>
-      <Link to='/lifecycle'>
-        <li>Lifecycle</li>
-      </Link>
-    </ul>
+    <React.Fragment>
+      <nav className='Navigation'>
+        <ul>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/introduction'>Introduction</Link>
+          </li>
+          <li>
+            <Link to='/sharedState'>Shared State</Link>
+          </li>
+          <li>
+            <Link to='/listsAndKeys'>Lists and Keys</Link>
+          </li>
+          <li>
+            <Link to='/lifecycle'>Lifecycle</Link>
+          </li>
+        </ul>
+      </nav>
+    </React.Fragment>
   )
 }
 

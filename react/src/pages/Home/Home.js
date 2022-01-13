@@ -3,9 +3,10 @@ import Navigation from '../../components/Navigation/Navigation'
 
 const Home = () => {
   return (
-    <div>
+    <React.Fragment>
       <Navigation />
-    </div>
+      <div className='Home'></div>
+    </React.Fragment>
   )
 }
 

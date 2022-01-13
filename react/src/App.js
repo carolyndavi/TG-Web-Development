@@ -7,15 +7,13 @@ import Lifecycle from './pages/Lifecycle/Lifecycle'
 
 const App = () => {
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/introduction' element={<Introduction />} />
-        <Route path='/sharedState' element={<SharedState />} />
-        <Route path='/listsAndKeys' element={<ListsAndKeys />} />
-        <Route path='/lifecycle' element={<Lifecycle />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/introduction' element={<Introduction />} />
+      <Route path='/sharedState' element={<SharedState />} />
+      <Route path='/listsAndKeys' element={<ListsAndKeys />} />
+      <Route path='/lifecycle' element={<Lifecycle />} />
+    </Routes>
   )
 }
 

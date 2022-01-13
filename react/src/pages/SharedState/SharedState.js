@@ -3,9 +3,9 @@ import Navigation from '../../components/Navigation/Navigation'
 
 const SharedState = () => {
   return (
-    <div>
+    <React.Fragment>
       <Navigation />
-    </div>
+    </React.Fragment>
   )
 }
 
