@@ -2,18 +2,18 @@ import React from 'react'
 import ClassComponent from '../../components/ClassComponent/ClassComponent'
 import FunctionComponent from '../../components/FunctionComponent/FunctionComponent'
 import Navigation from '../../components/Navigation/Navigation'
-import './Introduction.css'
+import './IntroductionPart2.css'
 
-const Introduction = () => {
+const IntroductionPart2 = () => {
   return (
-    <React.Fragment>
+    <>
       <Navigation />
-      <div className='Introduction'>
+      <div className='introduction'>
         <FunctionComponent />
         <ClassComponent />
       </div>
-    </React.Fragment>
+    </>
   )
 }
 
-export default Introduction
+export default IntroductionPart2

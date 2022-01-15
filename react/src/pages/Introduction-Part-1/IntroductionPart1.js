@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Navigation from '../../components/Navigation/Navigation'
-import './SharedState.css'
+import './IntroductionPart1.css'
 
-const SharedState = () => {
+const IntroductionPart1 = () => {
   const [searchValue, setSearchValue] = useState('')
 
   const handleInputChange = (event) => {
@@ -12,14 +12,13 @@ const SharedState = () => {
   return (
     <>
       <Navigation />
-      <div className='shared-state'>
+      <div className='introduction'>
         <h2>Hello Function {searchValue} !</h2>
-        <input type='text' onChange={handleInputChange} />
-        <h2 className='class'>Hello Class {searchValue} !</h2>
+        <h2>Hello Class {searchValue} !</h2>
         <input type='text' onChange={handleInputChange} />
       </div>
     </>
   )
 }
 
-export default SharedState
+export default IntroductionPart1

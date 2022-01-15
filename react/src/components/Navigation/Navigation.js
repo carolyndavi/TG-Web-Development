@@ -11,14 +11,18 @@ const Navigation = () => {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/introduction'>Introduction</Link>
+            <Link to='/introduction-part-1'>Introduction Part 1</Link>
           </li>
           <li>
-            <Link to='/sharedState'>Shared State</Link>
+            <Link to='/introduction-part-2'>Introduction Part 2</Link>
           </li>
           <li>
-            <Link to='/listsAndKeys'>Lists and Keys</Link>
+            <Link to='/shared-state'>Shared State</Link>
           </li>
+          <li>
+            <Link to='/lists-and-keys'>Lists and Keys</Link>
+          </li>
+
           <li>
             <Link to='/lifecycle'>Lifecycle</Link>
           </li>
